@@ -48,10 +48,10 @@ The requirements.txt file includes all necessary dependencies, such as MiDaS, Op
 ## Results
 
 ### Original Input
-*(Example: input.jpg)*
+*(./input.jpg)*
 
 ### Input Depth Map
-*(Example: depth_map.png)*
+*(./depth_map.png)*
 
 ### Output Point Cloud
 This point cloud renders better than the final output. To do it justice, this file is 40MB, while the final output is only 600KB.  
