@@ -17,9 +17,10 @@ The pipeline involves:
 2. Converting the depth map into a 3D point cloud.
 3. Rendering the point cloud into a 3D mesh.
 
-## System details
+## System Details
 
-Multipass with 8 CPU cores and 12 GB RAM, Ubuntu 24.02 LTS  
+- **Environment:** Multipass with 8 CPU cores and 12 GB RAM
+- **OS:** Ubuntu 24.02 LTS  
 
 ## Current Status
 
@@ -33,12 +34,12 @@ To set up the project, ensure you have Python installed and run the following co
 pip install -r requirements.txt
 ```
 
-The `requirements.txt` file includes all necessary dependencies, such as MiDaS, Open3D, and Matplotlib.
+The requirements.txt file includes all necessary dependencies, such as MiDaS, Open3D, and Matplotlib.
 
 ## Usage
 
 1. Place your input 2D image in the `input/` directory.
-2. Run the script `depth_to_pointcloud.py` to generate the depth map, point cloud, and 3D mesh:
+2. Run the script depth_to_pointcloud.py to generate the depth map, point cloud, and 3D mesh:
    ```bash
    python depth_to_pointcloud.py
    ```
@@ -47,17 +48,17 @@ The `requirements.txt` file includes all necessary dependencies, such as MiDaS, 
 ## Results
 
 ### Original Input
-*(input.jpg)*
+*(Example: input.jpg)*
 
 ### Input Depth Map
-*(depth_map.png)*
+*(Example: depth_map.png)*
 
 ### Output Point Cloud
-This point cloud renders better than the final output. To its justice, this is of size 40MB and final output if 600KB.  
-*([Watch the video](output_media/point_cloud.mov))*
+This point cloud renders better than the final output. To do it justice, this file is 40MB, while the final output is only 600KB.  
+Watch the video
 
 ### Output 3D Mesh
-*([Watch the video](output_media/output_mesh.mov.mov))*
+Watch the video
 
 ## Next Steps
 
